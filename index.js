@@ -5,7 +5,7 @@ var duplexify = require('duplexify')
 var through = require('through2')
 var lpstream = require('length-prefixed-stream')
 
-module.exports = function Msgpack5Stream (stream) {
+module.exports = function JsonStream (stream) {
   var msgEncode = through.obj(function (data, enc, cb) {
     cb(null, JSON.stringify(data))
   })

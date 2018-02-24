@@ -1,5 +1,5 @@
 {
-  "name": "json-duplex-stream",
+  "name": "json-lpduplex-stream",
   "version": "2.0.0",
   "description": "A duplex stream wrapper for json",
   "main": "index.js",
@@ -8,12 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/watson/msgpack5-stream.git"
+    "url": "git+https://github.com/rt2zz/json-lpduplex-stream.git"
   },
   "dependencies": {
     "duplexify": "^3.4.5",
     "length-prefixed-stream": "^1.5.0",
-    "msgpack5": "^3.4.1",
     "pump": "^1.0.1",
     "through2": "^2.0.1"
   },
@@ -21,7 +20,6 @@
     "standard": "^8.4.0"
   },
   "keywords": [
-    "msgpack5",
     "stream",
     "duplex",
     "duplexify"
@@ -29,9 +27,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rt2zz/json-duplex-stream/issues"
+    "url": "https://github.com/rt2zz/json-lpduplex-stream/issues"
   },
-  "homepage": "https://github.com/rt2zz/json-duplex-stream#readme",
+  "homepage": "https://github.com/rt2zz/json-lpduplex-stream#readme",
   "coordinates": [
     52.6481661,
     -7.197170099999999
