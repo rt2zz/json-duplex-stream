@@ -4,15 +4,14 @@ var pump = require('pump')
 var duplexify = require('duplexify')
 var through = require('through2')
 var lpstream = require('length-prefixed-stream')
-var msgpack = require('msgpack5')()
 
 module.exports = function Msgpack5Stream (stream) {
   var msgEncode = through.obj(function (data, enc, cb) {
-    cb(null, msgpack.encode(data))
+    cb(null, JSON.stringify(data))
   })
 
   var msgDecode = through.obj(function (data, enc, cb) {
-    cb(null, msgpack.decode(data))
+    cb(null, JSON.parse(data))
   })
 
   var dup = duplexify.obj()
